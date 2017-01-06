@@ -83,7 +83,7 @@ var nameCashMoneyBonus = {
     nameCashMoneyBonus.bonusPercentage = 0;
   }
 
-nameCashMoneyBonus.totalBonus = nameOfEmployee.annualSalary * nameCashMoneyBonus.bonusPercentage;
+nameCashMoneyBonus.totalBonus = Math.round(nameOfEmployee.annualSalary * nameCashMoneyBonus.bonusPercentage);
 
 nameCashMoneyBonus.adjustAnnualCompensation = Number(nameOfEmployee.annualSalary) + nameCashMoneyBonus.totalBonus;
 
